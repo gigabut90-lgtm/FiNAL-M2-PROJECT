@@ -1,0 +1,96 @@
+#text {
+    transition: all 0.3s ease;
+}
+
+#text:hover::placeholder {
+    color: #3b82f6;
+}
+
+#text::placeholder {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+
+#text:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+#text:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+
+
+
+#results h3 {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+#results h3:hover {
+    color: #7c3aed;
+    transform: translateX(5px);
+}
+
+
+#results h4 {
+    transition: color 0.3s ease;
+}
+
+#results h4:hover {
+    color: #2563eb;
+}
+
+
+#results p {
+    transition: color 0.3s ease;
+}
+
+#results p:hover {
+    color: #2563eb;
+}
+
+
+button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.clear-button {
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+
+}
+
+
+.clear-button:hover {
+    background-color: #991b1b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* When the button is clicked */
+.clear-button:active {
+    transform: scale(0.95);
+}

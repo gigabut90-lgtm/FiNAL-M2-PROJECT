@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WHATS THE WORD !!!</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script defer src="index.js"></script>
+</head>
+
+<body class="bg-blue-500 min-h-screen p-6">
+
+    <header class="bg-white text-blue-600 text-center p-6 rounded-2xl">
+        <h1 class="font-bold text-4xl mb-2">WHATS THE WORD !!!</h1>
+        <p class="font-semibold text-2xl text-black">
+            Welcome to the dictionary
+        </p>
+        <div class="bg-blue-500 h-1 mt-4 rounded-full"></div>
+    </header>
+
+    <main class="text-center p-6 rounded-2xl mt-4 bg-white">
+        <section>
+            <h2 class="text-xl font-bold mb-4">
+                Searching for a new word
+            </h2>
+
+            <form id="word-search" class="flex flex-col gap-3">
+
+                <label for="text">Enter a word</label>
+
+                <input
+                    type="text"
+                    id="text"
+                    name="word"
+                    placeholder="e.g. Fantastic"
+                    class="flex-1 border border-gray-300 p-3 rounded-lg"
+                >
+
+                <button
+                    id="submit"
+                    type="submit"
+                    class="bg-black text-white px-6 py-3 rounded-lg hover:bg-blue-700"
+                >
+                    Search
+                </button>
+
+            </form>
+        </section>
+
+        <section id="results" class="mt-6 text-center"></section>
+    </main>
+
+</body>
+</html>
