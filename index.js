@@ -4,7 +4,7 @@ const results = document.getElementById("results");
 
 async function getWord(word) {
     try {
-        const response = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/${word")
+        const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
         if (!response.ok) {
             throw new Error("could not fetch data")
         }
@@ -22,7 +22,7 @@ async function getWord(word) {
 form.addEventListener("submit", async (event) => {
     event.preventDefault()
 
-    // Validation checkf,orinpust
+    // Validation checks for input
     const word = wordInput.value.trim();
     if (word === "") {
         results.textContent = "Please enter a word.";
@@ -31,6 +31,8 @@ form.addEventListener("submit", async (event) => {
     results.textContent = `Searching for "${word}"...`;
 
     }
+    console.log(word)
+
     const data = await getWord(word);
     //handles when  word not found
     if (!data) {
